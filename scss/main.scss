@@ -1,0 +1,98 @@
+@import './config';
+@import './nav';
+@import './responsive.scss';
+@import './nav2.scss';
+// @import './home';
+
+body{
+  background: #f7f4f4;
+  // box-shadow:1px 4px #f7f4f4;
+  // border: 2px solid green;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.position-link-to-top-page{
+  background: #f1eeee;
+  padding: 3rem 0;
+
+}
+.navbar{
+  position: sticky;
+  top: -10px;
+  background: #685e5e !important;
+  z-index: 100;
+  &_link{
+    color: #f1eeee !important;
+  }
+  
+}
+#category_one, #category_two, #category_three, #category_four
+{
+  display: none;
+}
+.box-shadow{
+   box-shadow: 5px 10px #f7f4f4;
+   align-items: center;
+}
+
+.side-bar-bg
+{
+  background: #0f0808 !important;
+  border:  4px solid #f1eeee;
+}
+.top-bar-bg
+{
+  background: #0f0808 !important;
+  border:  4px solid #f1eeee;
+  margin-left: -30px;
+}
+.home{
+  height: 100vh;
+  padding-top: 10vh;
+  overflow-x: hidden;
+  align-items: center;
+  text-align: center;
+  background:linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url('../../images/general_images/homepage3.jpg');
+  background-size: cover;
+  background-position: center;
+h1, h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+// .navbar-nav.navbar-center {
+//   position: absolute;
+//   left: 50%;
+//   transform: translatex(-50%);
+// }
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+@media (max-width: 576px) {
+  h2,h3{
+    font-size: 1.3rem;
+  }
+  h1{
+    font-size: 1.6rem
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
